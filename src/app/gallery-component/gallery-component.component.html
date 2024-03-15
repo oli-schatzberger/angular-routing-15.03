@@ -1,0 +1,8 @@
+<ul class="box">
+  <li *ngFor="let picture of pictureService.getPictures(); let i = index" class="box-item">
+    <a href="gallery/{{i}}">
+      <img src="{{picture.file}}" alt="image">
+    </a>
+    <div class="title">{{picture.title}}</div>
+  </li>
+</ul>
